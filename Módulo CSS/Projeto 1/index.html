@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/eeeb632d2d.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Yanne Cruz</title>
+</head>
+<body>
+    <header>
+      <div>
+        <img src="./images/gitlab-icon-rgb (1) (1).png" alt="logo">
+      </div>
+      <ul>
+        <li>
+          <a target="_blank" href="https://github.com/nanefcruz">github</a>
+        </li>
+        <li>
+          <a target="_blank" href="mailto:nanefc@hotmail.com">email</a>
+        </li>
+        <li>
+          <a target="_blank" href="https://wa.me/5533988632055">whatsapp</a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <section class="container">
+        <div class="name">
+          <h1>Yanne Cruz</h1>
+          <h5>Front-End Developer</h5>
+        </div>
+
+        <div onclick="displayAbout()" id="arrow">
+          <i id="animation" class="fa-solid fa-sort-down"></i>
+        </div>
+
+        <div style="display: none;" id="about">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo voluptas sunt suscipit magni, harum quam. Deserunt aperiam pariatur, voluptates totam ab blanditiis, inventore soluta aut consequuntur expedita impedit eligendi fugiat.
+          </p>
+        </div>
+
+        <div class="form">
+          <div>
+            <p>Deixe seu contato!</p>
+          </div>
+          <form action="">
+            <input type="text" placeholder="deixe seu melhor email aqui!">
+            <button>Enviar!</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      function displayAbout() {
+        var arrow = document.getElementById("animation");
+        arrow.classList.toggle("rotate")
+        var display = document.getElementById("about");
+        display.classList.toggle("active")
+      } 
+    </script>
+</body>
+</html>
